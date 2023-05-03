@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>...</title>
+
+    <style>
+      html {
+        background-color: #111;
+        color: #eee;
+      }
+    </style>
+
+  </head>
+  <body>
+  <pre>
+    List<String> myList = new ArrayList<>() {
+      @Override
+      public boolean add(String text) {
+        return super.add(text.toUpperCase());
+      }
+    };
+
+    myList.add("I shall be all CAPS.");
+    myList.add("Me too.");
+  </pre>
+  </body>
+</html>
